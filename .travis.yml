@@ -2,4 +2,4 @@ language: java
 
 jdk: oraclejdk11
 
-after_success: "I'm done"
+after_success: "I'm done" uname -r
