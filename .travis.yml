@@ -4,5 +4,7 @@ jdk: oraclejdk11
 
 services: 
   - mysql
+ before_install: 
+  - mysql -e "CREATE DATABASE IF NOT EXISTS TEST1;"
 
-after_success: "I'm done" uname -r
+after_success: "Database installed" 
