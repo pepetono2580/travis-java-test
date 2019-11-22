@@ -1,3 +1,5 @@
 language: java
 
 jdk: oraclejdk11
+
+after_success: echo "I'm done"
