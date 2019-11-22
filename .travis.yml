@@ -3,8 +3,9 @@ language: java
 jdk: oraclejdk11
 
 services: 
-  - mysql
+ - mysql
+ 
  before_install: 
   - mysql -e "CREATE DATABASE IF NOT EXISTS TEST1;"
 
-after_success: "Database installed" 
+after_success: echo "Database installed" 
